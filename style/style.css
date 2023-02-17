@@ -1,3 +1,13 @@
 body{
-    background-color: aqua;
+    font-family: sans-serif;
+    color: grey;
+}
+
+header{
+    background-color: black;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
 }

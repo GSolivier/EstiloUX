@@ -1,13 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: sans-serif;
+    background-color: rgb(221, 221, 221);
+    font-family: 'Quicksand', sans-serif;
     color: grey;
 }
 
-header{
-    background-color: black;
+.container-grid{
+    width: 90%;
+    margin: 0 auto;
 }
 
-header a {
+
+/* ************** CABEÇALHO *************** */
+
+header .header-flex{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: grey;
+}
+
+header h1{
+    color: white;
+    font-weight: 300;
+}
+
+header h1 #logoux{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+
+header nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* ******* CONtEUDO PRICIPAL ***********/
+

@@ -24,9 +24,14 @@ body{
 header .header-flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-header{
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: grey;
+    height: 60px;
 }
 
 header h1{
@@ -41,11 +46,67 @@ header h1 #logoux{
     
 }
 
+header nav{
+    width: 300px;
+    height: 40px;
+    /* background-color: blue; */
+}
+
 header nav a {
+    display: flex;
     color: white;
     text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
 
 
 /* ******* CONtEUDO PRICIPAL ***********/
 
+section{
+    width: 70%;
+    background-color: white;
+    margin-top: 30px;
+}
+
+section img{
+    width: 100%;
+}
+
+section p {
+    padding: 15px;
+}
+
+section h2 {
+    padding: 15px;
+}
+
+/* ************* CONTEUDO LADO****************** */
+
+aside{
+    display: flex;
+    flex-direction:column;
+    width: 20%;
+    bor
+}
+.colunas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    border-bottom: 1px solid grey;
+}
+
+article{
+    background-color: white;
+    height:150px;
+}
+
+.coluna2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

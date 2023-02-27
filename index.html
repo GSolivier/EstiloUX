@@ -5,68 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EstiloUX</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <!-- ----------- CABEÇALHO ----------- -->
-    <header class="header-flex ">
-        <div class="container-grid header-flex">
-            <!-- Logotio da marca -->
-            <h1>Estilo<span id="logoux">UX</span></h1>
-            <!-- Menu de links -->
-            <nav class="header-flex">
+    <!-- ****** CABEÇALHO ****** -->
+    <header>
+        <div class="container-grid header-flex"><!-- container flex -->
+            <!-- Título principal da página -->
+            <h1>
+                Estilo<span id="logoux">UX</span>
+            </h1>
+
+            <nav>
                 <a href="">Home</a>
                 <a href="">Sobre</a>
                 <a href="">Contato</a>
             </nav>
         </div>
     </header>
-    <!-- conteudo principal -->
+
     <main>
-        <!-- Seção principal da pagina -->
-        <div class="colunas container-grid">
-            <section>
-                <img src="images/lapisdecor.png" alt="Imagem principal - Lápis de cor">
+        <div class="container-grid colunas-flex">
+
+
+            <section class="coluna1">
+                <img id="lapis" src="images/lapisdecor.png" alt="Lápis de Cor">
 
                 <h2>Cores com harmonia</h2>
 
                 <p>Entenda como fazer combinação de cores que fazem sentido para sua identidade visual</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui recusandae at animi earum nemo
-                    sapiente, veritatis repellendus necessitatibus maiores tempora nihil quod vero magni officia
-                    doloremque eligendi id praesentium quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Labore ipsa impedit id nulla accusantium magnam non commodi exercitationem aspernatur dolore?
-                    Deserunt obcaecati autem quisquam magni, recusandae accusamus rem voluptates ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo debitis vel libero numquam soluta
+                    incidunt
+                    sunt porro unde ratione. Ab quae fuga, facere aspernatur explicabo ad! Facere magnam recusandae
+                    numquam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo debitis vel libero numquam soluta
+                    incidunt
+                    sunt porro unde ratione. Ab quae fuga, facere aspernatur explicabo ad! Facere magnam recusandae
+                    numquam!
+                </p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat alias voluptas eos dolor nisi,
-                    culpa dolores. Unde, laborum asperiores sapiente, eius accusantium quis, ullam minima rem excepturi
-                    blanditiis optio?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores natus. Aliquam illum natus
+                    ullam voluptatum architecto soluta, hic, ducimus doloremque mollitia impedit perspiciatis excepturi
+                    dolorem quos saepe corrupti. Quam.</p>
             </section>
 
             <aside class="coluna2">
-                <article>
+
+                <article id="search">
                     <h3>Buscar</h3>
+
+                    <div class="search-bar search-flex">
+
+                    <input class="pesquisar-barra" type="text">
+
+                    <button class="pesquisar">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </button>
+                    </div>
                 </article>
 
-                <article>
+                <article id="posts">
                     <h3>Posts Anteriores</h3>
-                    <p>- Dicas para melhorar a usabilidade da sua página.</p>
-                    <p>- Como identificar erros em uma composição visual.</p>
-                    <p>- Cores com harmonia.</p>
-                    <p>- 7 hacks e dicas do Illustrator que você precisa conhecer.</p>
+
+                    <ul><li>Dicas para melhorar a usabilidade da sua página</l1>
+                        <li>Como identificar erros em uma composição visual</l1>
+                        <li>Cores com harmonia</l1>
+                        <li>7 hacks e dicas do Illustrator que você precisa conhecer</l1></ul>
                 </article>
 
-                <article>
+                <article id="email">
                     <h3>Inscreva-se</h3>
+
+                    <p>Receba as novidades do site em seu e-mail! Basta adicionar seu e-mail abaixo!</p>
+
+                    <input class="pesquisar-email" type="text">
                 </article>
             </aside>
+
         </div>
     </main>
-    <!-- Rodapé -->
+
     <footer>
+        <div class="container-grid footer-flex">
         <p>EstiloUX 2023 - Todos os direitos reservados</p>
+        </div>
     </footer>
 </body>
 

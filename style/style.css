@@ -1,112 +1,169 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
+/* Reset de propriedades */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body{
-    background-color: rgb(221, 221, 221);
+body {
+    
     font-family: 'Quicksand', sans-serif;
     color: grey;
+    background-color: rgb(212, 212, 212);
 }
-
-.container-grid{
-    width: 90%;
+/* configurações genéricas */
+.container-grid {
+    width: 100%;
     margin: 0 auto;
+    max-width: 1200px;
+    min-width: 992px;
 }
 
-
-/* ************** CABEÇALHO *************** */
-
-header .header-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/***** Cabeçalho *****/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: grey;
-    height: 60px;
 }
 
-header h1{
+header .header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
     color: white;
     font-weight: 300;
 }
 
 header h1 #logoux{
-    font-family: 'Comic Neue', cursive;
-    font-weight: 700;
+    font-weight: 600;
     font-style: italic;
-    
 }
 
-header nav{
-    width: 300px;
-    height: 40px;
-    /* background-color: blue; */
+header nav {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav a {
-    display: flex;
     color: white;
     text-decoration: none;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 
+/* **** MAIN **** */
 
-/* ******* CONtEUDO PRICIPAL ***********/
+main .colunas-flex {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 20px;  
+ margin-bottom: 60px;
+}
 
-section{
-    width: 70%;
+/* conteudo lapis */
+main .coluna1 {
+    width: 75%;
     background-color: white;
-    margin-top: 30px;
+    /* background-color: green; */
 }
 
-section img{
+/* imagem do lápis */
+main .coluna1 #lapis {
     width: 100%;
 }
 
-section p {
-    padding: 15px;
-}
-
-section h2 {
-    padding: 15px;
-}
-
-/* ************* CONTEUDO LADO****************** */
-
-aside{
+/* aside */
+main .coluna2 {
     display: flex;
-    flex-direction:column;
     width: 20%;
-    bor
-}
-.colunas {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-h3 {
+/* Margem do paragrafo e titulo do conteudo principal */
+.coluna1 p, h2{
+    margin: 20px;
+}
+
+/* Formatação dos titulos do */
+.coluna2 h3 {
     border-bottom: 1px solid grey;
+    text-align: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+
+aside {
+    justify-content: space-evenly;
 }
 
 article{
+    display: flex;
+    height: max-content;
     background-color: white;
-    height:150px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
 }
 
-.coluna2{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.coluna2 #posts ul {
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.coluna2 #email p{
+    margin: 10px;
+    text-align: center;
+}
+
+.search-flex {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.pesquisar {
+    background-color: grey;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.pesquisar-barra {
+    border: 3px solid rgb(196, 196, 196);
+    margin-right: 10px;
+}
+
+/* **************RODAPÉ ************************ */
+
+.footer-flex{
+    display: flex;
+    height: 52px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    background-color: grey;
+    color: white;
+    height: 100%;
+}
+
+.pesquisar-email{
+    border: 3px solid rgb(196, 196, 196);
+    margin-bottom: 15px;
+    height: 35px;
 }
